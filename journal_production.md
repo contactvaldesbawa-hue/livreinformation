@@ -1,0 +1,9 @@
+# Journal de production — 27 septembre 2026
+
+- Le premier échange annonçait un DOCX absent ; le nouvel échange fournit un long texte en conversation. Aucun original OOXML ne peut être comparé ou conservé intact.
+- Décision de production : édition de lecture **adaptée/condensée**, 39 chapitres dans l’ordre, objectif, explication, procédure, exemple, garde-fous, exercice, prompt et passage à l’action. Ce n’est pas une reproduction intégrale du texte collé ; correction de la prétention « 130 pages consultées » et retrait des renvois aux dossiers R-001…R-006 absents.
+- Corrections éditoriales importantes : numérotation des procédures remise à 1 par chapitre ; annexe 31–60 jours clairement limitée à 30 jours de consolidation et non 60 jours supplémentaires ; références ciblées S01–S13 et réserves locales ; distinction de l’annonce YouTube 2027 des critères actuels.
+- Couverture Arena et schémas originaux insérés en cinq PNG. Aucun faux logo, fausse capture ou image trouvée au hasard. Textes des schémas accessibles aussi dans les paragraphes adjacents ; images intégrées non éditables en tant que formes Word.
+- `production/contenu.py` et `production/annexes.py` sont les sources maintenables de l’adaptation ; `production/compose.py` compose DOCX et PDF séparément. DOCX A4 éditable avec styles et champ TOC à actualiser. PDF A4 de lecture, 67 pages, non produit par export Word faute de moteur LibreOffice.
+- Contrôle : ouverture des deux fichiers ; archive DOCX ZIP valide, cinq images ; texte de première et dernière pages PDF extrait ; pages 1, 17, 35 et 67 ouvertes et examinées. Les pages de séparation de parties sont intentionnellement aérées ; aucun inventaire exhaustif des pages n’a été effectué.
+- Restent : validation auteur de la biographie, de la condensation, des droits commerciaux de l’image IA et des règles évolutives non recontrôlées ; mise à jour TOC Word, audit visuel complet, gabarit d’impression si demandé.

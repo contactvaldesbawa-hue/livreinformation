@@ -1,0 +1,20 @@
+# QA — édition de lecture adaptée (27 septembre 2026)
+
+**Important :** le texte a été envoyé en conversation, sans fichier DOCX. Cette livraison est une **adaptation condensée** (39 chapitres conservés, prose resserrée), **pas** une transcription intégrale fidèle des paragraphes du manuscrit collé. Ne pas diffuser comme « manuscrit intégral » sans validation de l’auteur. Les fichiers portent les noms demandés, mais leur périmètre est cette édition adaptée.
+
+| ÉLÉMENT | STATUT | PREUVE | SOURCE | DATE | ACTION RESTANTE |
+|---|---|---|---|---|---|
+| Source de travail | TEXTE CONVERSATION | Aucun DOCX joint ; les 39 chapitres, la conclusion et les annexes étaient présents dans le message | Message utilisateur | 2026-09-27 | Si une fidélité textuelle stricte est demandée, fournir un fichier source récupérable ou valider la ressaisie intégrale |
+| DOCX éditable | CRÉÉ | `BELIVE_MONEY_manuscrit_final.docx` ouvert par python-docx ; 39 titres de chapitres, 1097 paragraphes, 1 tableau | Fichier produit | 2026-09-27 | Mise à jour manuelle du champ TOC dans Word ; validation de mise en page dans Word/LibreOffice non effectuée |
+| PDF de lecture | CRÉÉ | `BELIVE_MONEY_manuscrit_final.pdf` ouvert par PyMuPDF et pypdf : **67 pages**, 52 liens détectés | Fichier produit | 2026-09-27 | Épreuve visuelle complète page par page et comparaison avec Word requises |
+| Correspondance des deux éditions | PARTIELLE | Les deux formats sont produits depuis le même tableau de blocs éditoriaux | `production/compose.py` | 2026-09-27 | Le PDF est composé séparément, **non exporté depuis le DOCX** : écarts de pagination possibles |
+| Média intégré DOCX | VALIDÉ TECHNIQUEMENT | Archive DOCX testée ; cinq PNG embarqués sous `word/media/` | ZIP OOXML | 2026-09-27 | Alt text OOXML des images non ajouté ; contrôle visuel Word requis |
+| Média visible PDF | VÉRIFIÉ PAR SONDAGE | Couverture page 1 et schéma page 35 ouverts et inspectés ; autres images comptées mais non toutes inspectées | Rendus PyMuPDF | 2026-09-27 | Inspecter toutes les pages de diffusion finale |
+| Styles Word et sommaire | PARTIEL | Styles Heading 1/2, styles dédiés, marqueurs de chapitres et champ TOC présent ; liste cliquable des chapitres présente | Inspection OOXML/python-docx | 2026-09-27 | Actualiser TOC dans Word ; le champ non recalculé peut afficher un sommaire incomplet à l’ouverture |
+| Liens bibliographiques | PARTIEL | 13 liens externes OOXML et 52 liens PDF (dont sommaire) ; destinations non toutes testées HTTP | Fichiers produits | 2026-09-27 | Contrôler les liens avant diffusion |
+| Sources évolutives | PARTIEL | 13 pages/rubriques de sources vérifiées ou rouvertes, registre `sources_et_credits.md` | Pages officielles citées | 2026-09-27 | Ne pas attribuer aux 130 références du texte collé une vérification indépendante ; reprendre la recherche avant édition complète |
+| Contenu intégral mot à mot | NON | Le texte du manuscrit source n’a pas été archivé mot à mot ; les 39 chapitres font l’objet d’une adaptation synthétique | Texte fourni + `production/contenu.py` | 2026-09-27 | Recomposition intégrale si l’auteur exige la fidélité exacte |
+| Contrôle typographique | PARTIEL | Images de pages 1, 17, 35 et 67 examinées ; aucune coupe visible dans cet échantillon | Rendus de contrôle | 2026-09-27 | Examiner le reste de la pagination sur appareils cible |
+| Couverture impression | NON PRÊTE | Couverture 864 × 1232 px ; A4 de lecture sans fond perdu ni gabarit relieur | Fichier PNG et A4 | 2026-09-27 | Obtenir gabarit imprimeur et visuel plus haute résolution |
+| Biographie | À VALIDER | Déclarations attribuées explicitement au texte de l’auteur et non vérifiées indépendamment | Message utilisateur | 2026-09-27 | L’auteur confirme avant vente |
+| Droits d’illustration | PARTIEL | Couverture IA Arena, quatre schémas déterministes internes ; aucune image stock ni logo tiers | `illustrations/` | 2026-09-27 | Autorisation et conditions commerciales de l’image IA à confirmer avant commercialisation |
